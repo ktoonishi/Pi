@@ -3,9 +3,13 @@ import pygame
 import sys
 import random
 
+# import keras
+# deep learning
+# mysql
 
 WORK_SIZE = 400
 SCREEN_PADDING = 8
+IMAGE_SIze = 60
 FONT_SIZE = 48
 CALC_EP = 1000
 
@@ -22,6 +26,8 @@ def main():
     screen = pygame.display.set_mode((WORK_SIZE, WORK_SIZE + FONT_SIZE))
     pygame.display.set_caption("Pi")
     font = pygame.font.Font(None, FONT_SIZE)
+
+    img = pygame.image.load("title.png")
 
     #
     rr = WORK_SIZE * WORK_SIZE
